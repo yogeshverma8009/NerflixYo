@@ -20,7 +20,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.use(cookieParser());
 const corsOptions = {
-    origin:["http://localhost:3000","https://netflix-yoyo.onrender.com"],
+    origin:"http://localhost:3000",
     credentials:true,
 }
 app.use(cors(corsOptions));
